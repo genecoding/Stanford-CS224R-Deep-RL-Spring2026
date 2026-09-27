@@ -1,0 +1,245 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Warning: All of online environments libraries in D4RL have been moved ]8;;https://github.com/Farama-Foundation/Gymnasium\Gymnasium]8;;\, ]8;;https://github.com/Farama-Foundation/MiniGrid\MiniGrid]8;;\ and ]8;;https://github.com/Farama-Foundation/Gymnasium-Robotics\Gymnasium-Robotics]8;;\, and all offline datasets in D4RL have been moved to ]8;;https://github.com/Farama-Foundation/Minari\Minari]8;;\.
+These new versions include large bug fixes, new versions of Python, and are where all new development will continue. Please upgrade these libraries as soon as you're able to do so.
+If you'd like to read more about the story behind this switch, please check out ]8;;https://farama.org/Announcing-Minari\this blog post]8;;\.
+Compiling /usr/local/lib/python3.10/site-packages/mujoco_py/cymj.pyx because it depends on /usr/local/lib/python3.10/site-packages/mujoco_py/pxd/mujoco.pxd.
+[1/1] Cythonizing /usr/local/lib/python3.10/site-packages/mujoco_py/cymj.pyx
+running build_ext
+building 'mujoco_py.cymj' extension
+creating /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder
+creating /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-310
+creating /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-310/usr
+creating /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-310/usr/local
+creating /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-310/usr/local/lib
+creating /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-310/usr/local/lib/python3.10
+creating /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-310/usr/local/lib/python3.10/site-packages
+creating /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-310/usr/local/lib/python3.10/site-packages/mujoco_py
+creating /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-310/usr/local/lib/python3.10/site-packages/mujoco_py/gl
+gcc -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -g0 -fPIC -I/usr/local/lib/python3.10/site-packages/mujoco_py -I/root/.mujoco/mujoco210/include -I/usr/local/lib/python3.10/site-packages/numpy/core/include -I/usr/local/include/python3.10 -c /usr/local/lib/python3.10/site-packages/mujoco_py/cymj.c -o /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-310/usr/local/lib/python3.10/site-packages/mujoco_py/cymj.o -fopenmp -w
+gcc -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -g0 -fPIC -I/usr/local/lib/python3.10/site-packages/mujoco_py -I/root/.mujoco/mujoco210/include -I/usr/local/lib/python3.10/site-packages/numpy/core/include -I/usr/local/include/python3.10 -c /usr/local/lib/python3.10/site-packages/mujoco_py/gl/osmesashim.c -o /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-310/usr/local/lib/python3.10/site-packages/mujoco_py/gl/osmesashim.o -fopenmp -w
+creating /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/lib.linux-x86_64-cpython-310
+creating /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/lib.linux-x86_64-cpython-310/mujoco_py
+gcc -shared -g0 /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-310/usr/local/lib/python3.10/site-packages/mujoco_py/cymj.o /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-310/usr/local/lib/python3.10/site-packages/mujoco_py/gl/osmesashim.o -L/root/.mujoco/mujoco210/bin -L/usr/local/lib -Wl,--enable-new-dtags,-R/root/.mujoco/mujoco210/bin -lmujoco210 -lglewosmesa -lOSMesa -lGL -o /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/lib.linux-x86_64-cpython-310/mujoco_py/cymj.cpython-310-x86_64-linux-gnu.so -fopenmp
+pybullet build time: Jan 29 2025 23:16:28
+
+======================================== RUNTIME HYPERPARAMETERS ========================================
+algo: iql
+env_name: antmaze-medium-diverse-v0
+exp_name: iql_zeta_0.9_medium_diverse_seed1
+seed: 1
+offline_dataset: None
+filter_top_percent: None
+rew_shift: 0.0
+rew_scale: 1.0
+awac_lambda: 0.1
+iql_expectile: 0.9
+n_layers: 4
+size: 512
+learning_rate: 0.0001
+n_actions: 10
+num_timesteps: 300000
+batch_size: 256
+no_gpu: False
+which_gpu: 0
+scalar_log_freq: 50000
+save_params: False
+use_wandb: True
+checkpoint_interval: -1
+buffer_interval: -1
+load_checkpoint: None
+double_q: True
+num_agent_train_steps_per_iter: 1
+num_critic_updates_per_agent_update: 1
+ep_len: 700
+n_eval_episodes: 50
+load_d4rl_dataset: True
+=========================================================================================================
+
+
+LOGGING TO:  /root/hw/cs224r/scripts/../../data/hw3_iql_zeta_0.9_medium_diverse_seed1_antmaze-medium-diverse-v0_15-09-2026_07-49-15 
+
+
+Using GPU id 0
+Target Goal:  (20.417079192111245, 20.87149077975808)
+Target Goal:  (20.239885996505947, 20.265118958290323)
+
+Loading D4RL offline dataset from environment...
+Downloading dataset: http://rail.eecs.berkeley.edu/datasets/offline_rl/ant_maze_new/Ant_maze_big-maze_noisy_multistart_True_multigoal_True_sparse.hdf5 to /root/.d4rl/datasets/Ant_maze_big-maze_noisy_multistart_True_multigoal_True_sparse.hdf5
+load datafile:   0%|          | 0/8 [00:00<?, ?it/s]load datafile:  12%|█▎        | 1/8 [00:00<00:01,  4.06it/s]load datafile:  38%|███▊      | 3/8 [00:00<00:01,  4.05it/s]load datafile:  50%|█████     | 4/8 [00:01<00:01,  3.24it/s]load datafile:  62%|██████▎   | 5/8 [00:02<00:01,  1.98it/s]load datafile: 100%|██████████| 8/8 [00:02<00:00,  3.82it/s]
+Loaded 999035 transitions (2924 episodes) from D4RL dataset.
+
+
+********** Iteration 50000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 50000
+running time 680.436927
+  [Eval video] saved to: /root/hw/cs224r/scripts/../../data/hw3_iql_zeta_0.9_medium_diverse_seed1_antmaze-medium-diverse-v0_15-09-2026_07-49-15/eval_traj_last_0.mp4
+  [Eval video] saved to: /root/hw/cs224r/scripts/../../data/hw3_iql_zeta_0.9_medium_diverse_seed1_antmaze-medium-diverse-v0_15-09-2026_07-49-15/eval_traj_last_1.mp4
+  [Eval video] saved to: /root/hw/cs224r/scripts/../../data/hw3_iql_zeta_0.9_medium_diverse_seed1_antmaze-medium-diverse-v0_15-09-2026_07-49-15/eval_traj_last_2.mp4
+  [Eval video] saved to: /root/hw/cs224r/scripts/../../data/hw3_iql_zeta_0.9_medium_diverse_seed1_antmaze-medium-diverse-v0_15-09-2026_07-49-15/eval_traj_last_3.mp4
+Train_EnvstepsSoFar : 50000
+TimeSinceStart : 680.4369270801544
+Critic V Loss : 0.064481221139431
+Critic Q Loss : 2.9745001792907715
+Critic Q Loss2 : 1.8259763717651367
+Actor Loss : 140.49612426757812
+Actor LR : 9.330127018922332e-05
+Eval_AverageReturn : -681.5800170898438
+Eval_StdReturn : 73.2073974609375
+Eval_MaxReturn : -251.0
+Eval_MinReturn : -700.0
+Eval_AverageEpLen : 681.66
+Buffer_Size : 999035
+Done logging...
+
+
+
+
+********** Iteration 100000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 100000
+running time 1478.143541
+  [Eval video] saved to: /root/hw/cs224r/scripts/../../data/hw3_iql_zeta_0.9_medium_diverse_seed1_antmaze-medium-diverse-v0_15-09-2026_07-49-15/eval_traj_last_0.mp4
+  [Eval video] saved to: /root/hw/cs224r/scripts/../../data/hw3_iql_zeta_0.9_medium_diverse_seed1_antmaze-medium-diverse-v0_15-09-2026_07-49-15/eval_traj_last_1.mp4
+  [Eval video] saved to: /root/hw/cs224r/scripts/../../data/hw3_iql_zeta_0.9_medium_diverse_seed1_antmaze-medium-diverse-v0_15-09-2026_07-49-15/eval_traj_last_2.mp4
+  [Eval video] saved to: /root/hw/cs224r/scripts/../../data/hw3_iql_zeta_0.9_medium_diverse_seed1_antmaze-medium-diverse-v0_15-09-2026_07-49-15/eval_traj_last_3.mp4
+Train_EnvstepsSoFar : 100000
+TimeSinceStart : 1478.143541097641
+Critic V Loss : 0.12165265530347824
+Critic Q Loss : 0.946696400642395
+Critic Q Loss2 : 0.8809072971343994
+Actor Loss : 12.221378326416016
+Actor LR : 7.500000000000035e-05
+Eval_AverageReturn : -603.47998046875
+Eval_StdReturn : 137.07839965820312
+Eval_MaxReturn : -268.0
+Eval_MinReturn : -700.0
+Eval_AverageEpLen : 603.86
+Buffer_Size : 999035
+Done logging...
+
+
+
+
+********** Iteration 150000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 150000
+running time 2227.741892
+  [Eval video] saved to: /root/hw/cs224r/scripts/../../data/hw3_iql_zeta_0.9_medium_diverse_seed1_antmaze-medium-diverse-v0_15-09-2026_07-49-15/eval_traj_last_0.mp4
+  [Eval video] saved to: /root/hw/cs224r/scripts/../../data/hw3_iql_zeta_0.9_medium_diverse_seed1_antmaze-medium-diverse-v0_15-09-2026_07-49-15/eval_traj_last_1.mp4
+  [Eval video] saved to: /root/hw/cs224r/scripts/../../data/hw3_iql_zeta_0.9_medium_diverse_seed1_antmaze-medium-diverse-v0_15-09-2026_07-49-15/eval_traj_last_2.mp4
+  [Eval video] saved to: /root/hw/cs224r/scripts/../../data/hw3_iql_zeta_0.9_medium_diverse_seed1_antmaze-medium-diverse-v0_15-09-2026_07-49-15/eval_traj_last_3.mp4
+Train_EnvstepsSoFar : 150000
+TimeSinceStart : 2227.7418920993805
+Critic V Loss : 0.08426961302757263
+Critic Q Loss : 0.5425701141357422
+Critic Q Loss2 : 0.49074506759643555
+Actor Loss : 7.684220314025879
+Actor LR : 4.9999999999999975e-05
+Eval_AverageReturn : -493.3999938964844
+Eval_StdReturn : 171.67037963867188
+Eval_MaxReturn : -250.0
+Eval_MinReturn : -700.0
+Eval_AverageEpLen : 494.06
+Buffer_Size : 999035
+Done logging...
+
+
+
+
+********** Iteration 200000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 200000
+running time 3017.576221
+  [Eval video] saved to: /root/hw/cs224r/scripts/../../data/hw3_iql_zeta_0.9_medium_diverse_seed1_antmaze-medium-diverse-v0_15-09-2026_07-49-15/eval_traj_last_0.mp4
+  [Eval video] saved to: /root/hw/cs224r/scripts/../../data/hw3_iql_zeta_0.9_medium_diverse_seed1_antmaze-medium-diverse-v0_15-09-2026_07-49-15/eval_traj_last_1.mp4
+  [Eval video] saved to: /root/hw/cs224r/scripts/../../data/hw3_iql_zeta_0.9_medium_diverse_seed1_antmaze-medium-diverse-v0_15-09-2026_07-49-15/eval_traj_last_2.mp4
+  [Eval video] saved to: /root/hw/cs224r/scripts/../../data/hw3_iql_zeta_0.9_medium_diverse_seed1_antmaze-medium-diverse-v0_15-09-2026_07-49-15/eval_traj_last_3.mp4
+Train_EnvstepsSoFar : 200000
+TimeSinceStart : 3017.5762209892273
+Critic V Loss : 0.18313848972320557
+Critic Q Loss : 0.8752356767654419
+Critic Q Loss2 : 0.9139111042022705
+Actor Loss : 7.1716108322143555
+Actor LR : 2.500000000000017e-05
+Eval_AverageReturn : -497.4599914550781
+Eval_StdReturn : 168.86956787109375
+Eval_MaxReturn : -263.0
+Eval_MinReturn : -700.0
+Eval_AverageEpLen : 498.1
+Buffer_Size : 999035
+Done logging...
+
+
+
+
+********** Iteration 250000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 250000
+running time 3757.115146
+  [Eval video] saved to: /root/hw/cs224r/scripts/../../data/hw3_iql_zeta_0.9_medium_diverse_seed1_antmaze-medium-diverse-v0_15-09-2026_07-49-15/eval_traj_last_0.mp4
+  [Eval video] saved to: /root/hw/cs224r/scripts/../../data/hw3_iql_zeta_0.9_medium_diverse_seed1_antmaze-medium-diverse-v0_15-09-2026_07-49-15/eval_traj_last_1.mp4
+  [Eval video] saved to: /root/hw/cs224r/scripts/../../data/hw3_iql_zeta_0.9_medium_diverse_seed1_antmaze-medium-diverse-v0_15-09-2026_07-49-15/eval_traj_last_2.mp4
+  [Eval video] saved to: /root/hw/cs224r/scripts/../../data/hw3_iql_zeta_0.9_medium_diverse_seed1_antmaze-medium-diverse-v0_15-09-2026_07-49-15/eval_traj_last_3.mp4
+Train_EnvstepsSoFar : 250000
+TimeSinceStart : 3757.1151463985443
+Critic V Loss : 0.05304677411913872
+Critic Q Loss : 0.859703779220581
+Critic Q Loss2 : 0.7476468682289124
+Actor Loss : 16.356054306030273
+Actor LR : 6.6987298107782025e-06
+Eval_AverageReturn : -490.5
+Eval_StdReturn : 183.4215087890625
+Eval_MaxReturn : -207.0
+Eval_MinReturn : -700.0
+Eval_AverageEpLen : 491.14
+Buffer_Size : 999035
+Done logging...
+
+
+
+
+********** Iteration 300000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 300000
+running time 4462.890286
+  [Eval video] saved to: /root/hw/cs224r/scripts/../../data/hw3_iql_zeta_0.9_medium_diverse_seed1_antmaze-medium-diverse-v0_15-09-2026_07-49-15/eval_traj_last_0.mp4
+  [Eval video] saved to: /root/hw/cs224r/scripts/../../data/hw3_iql_zeta_0.9_medium_diverse_seed1_antmaze-medium-diverse-v0_15-09-2026_07-49-15/eval_traj_last_1.mp4
+  [Eval video] saved to: /root/hw/cs224r/scripts/../../data/hw3_iql_zeta_0.9_medium_diverse_seed1_antmaze-medium-diverse-v0_15-09-2026_07-49-15/eval_traj_last_2.mp4
+  [Eval video] saved to: /root/hw/cs224r/scripts/../../data/hw3_iql_zeta_0.9_medium_diverse_seed1_antmaze-medium-diverse-v0_15-09-2026_07-49-15/eval_traj_last_3.mp4
+Train_EnvstepsSoFar : 300000
+TimeSinceStart : 4462.890286445618
+Critic V Loss : 0.11930714547634125
+Critic Q Loss : 6.649353981018066
+Critic Q Loss2 : 5.131414413452148
+Actor Loss : 34.26898193359375
+Actor LR : 0.0
+Eval_AverageReturn : -482.2799987792969
+Eval_StdReturn : 171.72268676757812
+Eval_MaxReturn : -234.0
+Eval_MinReturn : -700.0
+Eval_AverageEpLen : 482.96
+Buffer_Size : 999035
+Done logging...
+
+

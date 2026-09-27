@@ -1,0 +1,692 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Warning: All of online environments libraries in D4RL have been moved ]8;;https://github.com/Farama-Foundation/Gymnasium\Gymnasium]8;;\, ]8;;https://github.com/Farama-Foundation/MiniGrid\MiniGrid]8;;\ and ]8;;https://github.com/Farama-Foundation/Gymnasium-Robotics\Gymnasium-Robotics]8;;\, and all offline datasets in D4RL have been moved to ]8;;https://github.com/Farama-Foundation/Minari\Minari]8;;\.
+These new versions include large bug fixes, new versions of Python, and are where all new development will continue. Please upgrade these libraries as soon as you're able to do so.
+If you'd like to read more about the story behind this switch, please check out ]8;;https://farama.org/Announcing-Minari\this blog post]8;;\.
+Compiling /usr/local/lib/python3.10/site-packages/mujoco_py/cymj.pyx because it depends on /usr/local/lib/python3.10/site-packages/mujoco_py/pxd/mujoco.pxd.
+[1/1] Cythonizing /usr/local/lib/python3.10/site-packages/mujoco_py/cymj.pyx
+running build_ext
+building 'mujoco_py.cymj' extension
+creating /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder
+creating /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-310
+creating /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-310/usr
+creating /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-310/usr/local
+creating /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-310/usr/local/lib
+creating /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-310/usr/local/lib/python3.10
+creating /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-310/usr/local/lib/python3.10/site-packages
+creating /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-310/usr/local/lib/python3.10/site-packages/mujoco_py
+creating /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-310/usr/local/lib/python3.10/site-packages/mujoco_py/gl
+gcc -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -g0 -fPIC -I/usr/local/lib/python3.10/site-packages/mujoco_py -I/root/.mujoco/mujoco210/include -I/usr/local/lib/python3.10/site-packages/numpy/core/include -I/usr/local/include/python3.10 -c /usr/local/lib/python3.10/site-packages/mujoco_py/cymj.c -o /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-310/usr/local/lib/python3.10/site-packages/mujoco_py/cymj.o -fopenmp -w
+gcc -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -g0 -fPIC -I/usr/local/lib/python3.10/site-packages/mujoco_py -I/root/.mujoco/mujoco210/include -I/usr/local/lib/python3.10/site-packages/numpy/core/include -I/usr/local/include/python3.10 -c /usr/local/lib/python3.10/site-packages/mujoco_py/gl/osmesashim.c -o /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-310/usr/local/lib/python3.10/site-packages/mujoco_py/gl/osmesashim.o -fopenmp -w
+creating /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/lib.linux-x86_64-cpython-310
+creating /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/lib.linux-x86_64-cpython-310/mujoco_py
+gcc -shared -g0 /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-310/usr/local/lib/python3.10/site-packages/mujoco_py/cymj.o /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-310/usr/local/lib/python3.10/site-packages/mujoco_py/gl/osmesashim.o -L/root/.mujoco/mujoco210/bin -L/usr/local/lib -Wl,--enable-new-dtags,-R/root/.mujoco/mujoco210/bin -lmujoco210 -lglewosmesa -lOSMesa -lGL -o /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/lib.linux-x86_64-cpython-310/mujoco_py/cymj.cpython-310-x86_64-linux-gnu.so -fopenmp
+pybullet build time: Jan 29 2025 23:16:28
+
+======================================== RUNTIME HYPERPARAMETERS ========================================
+algo: iql
+env_name: PointmassMedium-v0
+exp_name: iql_zeta_0.9_stitching_seed1
+seed: 1
+offline_dataset: offline_datasets/pointmass_stitching_dataset.npz
+filter_top_percent: None
+rew_shift: 0.0
+rew_scale: 1.0
+awac_lambda: 0.1
+iql_expectile: 0.9
+n_layers: 4
+size: 512
+learning_rate: 0.0001
+n_actions: 10
+num_timesteps: 50000
+batch_size: 256
+no_gpu: False
+which_gpu: 0
+scalar_log_freq: 2000
+save_params: False
+use_wandb: True
+checkpoint_interval: -1
+buffer_interval: -1
+load_checkpoint: None
+double_q: True
+num_agent_train_steps_per_iter: 1
+num_critic_updates_per_agent_update: 1
+ep_len: 150
+n_eval_episodes: 20
+=========================================================================================================
+
+
+LOGGING TO:  /root/hw/cs224r/scripts/../../data/hw3_iql_zeta_0.9_stitching_seed1_PointmassMedium-v0_15-09-2026_09-17-01 
+
+
+Using GPU id 0
+
+Loading offline dataset from: offline_datasets/pointmass_stitching_dataset.npz
+Loaded 8184 transitions into replay buffer.
+  [Dataset vis] Episode-length histogram saved to: vis/dataset/iql/lowpct-1_toppct-1.png
+
+
+********** Iteration 2000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 2000
+running time 25.695829
+Train_EnvstepsSoFar : 2000
+TimeSinceStart : 25.695829391479492
+Critic V Loss : 0.006202943157404661
+Critic Q Loss : 0.09891261905431747
+Critic Q Loss2 : 0.08975780010223389
+Actor Loss : 0.009548367001116276
+Actor LR : 9.96057350657236e-05
+Eval_AverageReturn : -150.0
+Eval_StdReturn : 0.0
+Eval_MaxReturn : -150.0
+Eval_MinReturn : -150.0
+Eval_AverageEpLen : 150.0
+Buffer_Size : 8184
+Done logging...
+
+
+
+
+********** Iteration 4000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 4000
+running time 55.508602
+Train_EnvstepsSoFar : 4000
+TimeSinceStart : 55.508602142333984
+Critic V Loss : 0.007727528922259808
+Critic Q Loss : 0.517687201499939
+Critic Q Loss2 : 0.4976747930049896
+Actor Loss : 0.08206282556056976
+Actor LR : 9.842915805643127e-05
+Eval_AverageReturn : -150.0
+Eval_StdReturn : 0.0
+Eval_MaxReturn : -150.0
+Eval_MinReturn : -150.0
+Eval_AverageEpLen : 150.0
+Buffer_Size : 8184
+Done logging...
+
+
+
+
+********** Iteration 6000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 6000
+running time 85.376134
+Train_EnvstepsSoFar : 6000
+TimeSinceStart : 85.37613368034363
+Critic V Loss : 0.017828911542892456
+Critic Q Loss : 0.23560047149658203
+Critic Q Loss2 : 0.24140970408916473
+Actor Loss : 0.14180110394954681
+Actor LR : 9.64888242944119e-05
+Eval_AverageReturn : -150.0
+Eval_StdReturn : 0.0
+Eval_MaxReturn : -150.0
+Eval_MinReturn : -150.0
+Eval_AverageEpLen : 150.0
+Buffer_Size : 8184
+Done logging...
+
+
+
+
+********** Iteration 8000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 8000
+running time 116.176859
+Train_EnvstepsSoFar : 8000
+TimeSinceStart : 116.17685890197754
+Critic V Loss : 0.02401258423924446
+Critic Q Loss : 0.37818560004234314
+Critic Q Loss2 : 0.3283015191555023
+Actor Loss : 0.3529198169708252
+Actor LR : 9.381533400219238e-05
+Eval_AverageReturn : -150.0
+Eval_StdReturn : 0.0
+Eval_MaxReturn : -150.0
+Eval_MinReturn : -150.0
+Eval_AverageEpLen : 150.0
+Buffer_Size : 8184
+Done logging...
+
+
+
+
+********** Iteration 10000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 10000
+running time 146.828412
+Train_EnvstepsSoFar : 10000
+TimeSinceStart : 146.82841229438782
+Critic V Loss : 0.026344768702983856
+Critic Q Loss : 0.22446289658546448
+Critic Q Loss2 : 0.3442150354385376
+Actor Loss : 0.749442994594574
+Actor LR : 9.045084971874666e-05
+Eval_AverageReturn : -124.5999984741211
+Eval_StdReturn : 43.67768478393555
+Eval_MaxReturn : -20.0
+Eval_MinReturn : -150.0
+Eval_AverageEpLen : 124.95
+Buffer_Size : 8184
+Done logging...
+
+
+
+
+********** Iteration 12000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 12000
+running time 177.638639
+Train_EnvstepsSoFar : 12000
+TimeSinceStart : 177.63863921165466
+Critic V Loss : 0.016452975571155548
+Critic Q Loss : 0.23499828577041626
+Critic Q Loss2 : 0.1905345320701599
+Actor Loss : 0.2709740996360779
+Actor LR : 8.644843137107011e-05
+Eval_AverageReturn : -41.349998474121094
+Eval_StdReturn : 13.039460182189941
+Eval_MaxReturn : -21.0
+Eval_MinReturn : -74.0
+Eval_AverageEpLen : 42.35
+Buffer_Size : 8184
+Done logging...
+
+
+
+
+********** Iteration 14000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 14000
+running time 206.166499
+Train_EnvstepsSoFar : 14000
+TimeSinceStart : 206.166499376297
+Critic V Loss : 0.024093523621559143
+Critic Q Loss : 1.2343401908874512
+Critic Q Loss2 : 1.236377239227295
+Actor Loss : 3.460195541381836
+Actor LR : 8.187119948743422e-05
+Eval_AverageReturn : -45.95000076293945
+Eval_StdReturn : 14.934775352478027
+Eval_MaxReturn : -25.0
+Eval_MinReturn : -77.0
+Eval_AverageEpLen : 46.95
+Buffer_Size : 8184
+Done logging...
+
+
+
+
+********** Iteration 16000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 16000
+running time 234.174043
+Train_EnvstepsSoFar : 16000
+TimeSinceStart : 234.17404341697693
+Critic V Loss : 0.02539714425802231
+Critic Q Loss : 0.2135152816772461
+Critic Q Loss2 : 0.2253136932849884
+Actor Loss : 1.0734219551086426
+Actor LR : 7.679133974894975e-05
+Eval_AverageReturn : -42.349998474121094
+Eval_StdReturn : 17.14431381225586
+Eval_MaxReturn : -20.0
+Eval_MinReturn : -76.0
+Eval_AverageEpLen : 43.35
+Buffer_Size : 8184
+Done logging...
+
+
+
+
+********** Iteration 18000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 18000
+running time 262.862211
+Train_EnvstepsSoFar : 18000
+TimeSinceStart : 262.86221051216125
+Critic V Loss : 0.0206870399415493
+Critic Q Loss : 0.2026069015264511
+Critic Q Loss2 : 0.22088372707366943
+Actor Loss : 0.9540963768959045
+Actor LR : 7.128896457825341e-05
+Eval_AverageReturn : -36.5
+Eval_StdReturn : 13.912224769592285
+Eval_MaxReturn : -21.0
+Eval_MinReturn : -69.0
+Eval_AverageEpLen : 37.5
+Buffer_Size : 8184
+Done logging...
+
+
+
+
+********** Iteration 20000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 20000
+running time 291.845998
+Train_EnvstepsSoFar : 20000
+TimeSinceStart : 291.8459975719452
+Critic V Loss : 0.022499732673168182
+Critic Q Loss : 1.066151738166809
+Critic Q Loss2 : 1.0905780792236328
+Actor Loss : 0.5135557651519775
+Actor LR : 6.545084971874695e-05
+Eval_AverageReturn : -41.349998474121094
+Eval_StdReturn : 14.74542236328125
+Eval_MaxReturn : -21.0
+Eval_MinReturn : -77.0
+Eval_AverageEpLen : 42.35
+Buffer_Size : 8184
+Done logging...
+
+
+
+
+********** Iteration 22000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 22000
+running time 320.674417
+Train_EnvstepsSoFar : 22000
+TimeSinceStart : 320.6744165420532
+Critic V Loss : 0.02110978215932846
+Critic Q Loss : 1.5035288333892822
+Critic Q Loss2 : 1.5188336372375488
+Actor Loss : 0.2133796066045761
+Actor LR : 5.9369065729285804e-05
+Eval_AverageReturn : -41.5
+Eval_StdReturn : 10.375452041625977
+Eval_MaxReturn : -24.0
+Eval_MinReturn : -75.0
+Eval_AverageEpLen : 42.5
+Buffer_Size : 8184
+Done logging...
+
+
+
+
+********** Iteration 24000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 24000
+running time 348.473613
+Train_EnvstepsSoFar : 24000
+TimeSinceStart : 348.4736125469208
+Critic V Loss : 0.017016863450407982
+Critic Q Loss : 0.2731267511844635
+Critic Q Loss2 : 0.2775191068649292
+Actor Loss : 0.7446787357330322
+Actor LR : 5.313952597646537e-05
+Eval_AverageReturn : -41.349998474121094
+Eval_StdReturn : 18.781042098999023
+Eval_MaxReturn : -18.0
+Eval_MinReturn : -81.0
+Eval_AverageEpLen : 42.35
+Buffer_Size : 8184
+Done logging...
+
+
+
+
+********** Iteration 26000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 26000
+running time 376.210464
+Train_EnvstepsSoFar : 26000
+TimeSinceStart : 376.21046447753906
+Critic V Loss : 0.016779031604528427
+Critic Q Loss : 1.095139741897583
+Critic Q Loss2 : 1.1351463794708252
+Actor Loss : 0.3508892059326172
+Actor LR : 4.6860474023534165e-05
+Eval_AverageReturn : -39.400001525878906
+Eval_StdReturn : 11.909659385681152
+Eval_MaxReturn : -22.0
+Eval_MinReturn : -66.0
+Eval_AverageEpLen : 40.4
+Buffer_Size : 8184
+Done logging...
+
+
+
+
+********** Iteration 28000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 28000
+running time 403.898917
+Train_EnvstepsSoFar : 28000
+TimeSinceStart : 403.89891719818115
+Critic V Loss : 0.020225662738084793
+Critic Q Loss : 0.18909817934036255
+Critic Q Loss2 : 0.18065056204795837
+Actor Loss : 0.7500167489051819
+Actor LR : 4.063093427071371e-05
+Eval_AverageReturn : -44.0
+Eval_StdReturn : 12.36122989654541
+Eval_MaxReturn : -23.0
+Eval_MinReturn : -75.0
+Eval_AverageEpLen : 45.0
+Buffer_Size : 8184
+Done logging...
+
+
+
+
+********** Iteration 30000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 30000
+running time 431.939371
+Train_EnvstepsSoFar : 30000
+TimeSinceStart : 431.9393711090088
+Critic V Loss : 0.023972105234861374
+Critic Q Loss : 0.5431522130966187
+Critic Q Loss2 : 0.5375537276268005
+Actor Loss : 0.16672953963279724
+Actor LR : 3.454915028125259e-05
+Eval_AverageReturn : -35.79999923706055
+Eval_StdReturn : 12.302845001220703
+Eval_MaxReturn : -21.0
+Eval_MinReturn : -68.0
+Eval_AverageEpLen : 36.8
+Buffer_Size : 8184
+Done logging...
+
+
+
+
+********** Iteration 32000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 32000
+running time 459.644756
+Train_EnvstepsSoFar : 32000
+TimeSinceStart : 459.6447558403015
+Critic V Loss : 0.017645446583628654
+Critic Q Loss : 1.1109747886657715
+Critic Q Loss2 : 1.1345722675323486
+Actor Loss : 1.8973902463912964
+Actor LR : 2.8711035421746316e-05
+Eval_AverageReturn : -34.0
+Eval_StdReturn : 8.449851989746094
+Eval_MaxReturn : -24.0
+Eval_MinReturn : -58.0
+Eval_AverageEpLen : 35.0
+Buffer_Size : 8184
+Done logging...
+
+
+
+
+********** Iteration 34000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 34000
+running time 488.464580
+Train_EnvstepsSoFar : 34000
+TimeSinceStart : 488.46457958221436
+Critic V Loss : 0.019035600125789642
+Critic Q Loss : 0.1306052803993225
+Critic Q Loss2 : 0.15405689179897308
+Actor Loss : 0.6453829407691956
+Actor LR : 2.3208660251050165e-05
+Eval_AverageReturn : -42.29999923706055
+Eval_StdReturn : 14.515853881835938
+Eval_MaxReturn : -18.0
+Eval_MinReturn : -81.0
+Eval_AverageEpLen : 43.3
+Buffer_Size : 8184
+Done logging...
+
+
+
+
+********** Iteration 36000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 36000
+running time 516.430509
+Train_EnvstepsSoFar : 36000
+TimeSinceStart : 516.4305090904236
+Critic V Loss : 0.01863953098654747
+Critic Q Loss : 1.1317322254180908
+Critic Q Loss2 : 1.1515847444534302
+Actor Loss : 0.4887666404247284
+Actor LR : 1.8128800512565578e-05
+Eval_AverageReturn : -41.79999923706055
+Eval_StdReturn : 13.23480224609375
+Eval_MaxReturn : -19.0
+Eval_MinReturn : -69.0
+Eval_AverageEpLen : 42.8
+Buffer_Size : 8184
+Done logging...
+
+
+
+
+********** Iteration 38000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 38000
+running time 544.866338
+Train_EnvstepsSoFar : 38000
+TimeSinceStart : 544.8663377761841
+Critic V Loss : 0.021622274070978165
+Critic Q Loss : 0.20873421430587769
+Critic Q Loss2 : 0.2069883495569229
+Actor Loss : 1.536876916885376
+Actor LR : 1.355156862892952e-05
+Eval_AverageReturn : -31.0
+Eval_StdReturn : 12.82575511932373
+Eval_MaxReturn : -14.0
+Eval_MinReturn : -75.0
+Eval_AverageEpLen : 32.0
+Buffer_Size : 8184
+Done logging...
+
+
+
+
+********** Iteration 40000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 40000
+running time 573.028658
+Train_EnvstepsSoFar : 40000
+TimeSinceStart : 573.0286576747894
+Critic V Loss : 0.02638433501124382
+Critic Q Loss : 1.5286893844604492
+Critic Q Loss2 : 1.6025872230529785
+Actor Loss : 0.45005637407302856
+Actor LR : 9.549150281252684e-06
+Eval_AverageReturn : -37.04999923706055
+Eval_StdReturn : 17.760841369628906
+Eval_MaxReturn : -16.0
+Eval_MinReturn : -94.0
+Eval_AverageEpLen : 38.05
+Buffer_Size : 8184
+Done logging...
+
+
+
+
+********** Iteration 42000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 42000
+running time 601.372244
+Train_EnvstepsSoFar : 42000
+TimeSinceStart : 601.3722441196442
+Critic V Loss : 0.018476739525794983
+Critic Q Loss : 0.4048314392566681
+Critic Q Loss2 : 0.4131813645362854
+Actor Loss : 0.8434396982192993
+Actor LR : 6.1846659978068705e-06
+Eval_AverageReturn : -37.5
+Eval_StdReturn : 18.416025161743164
+Eval_MaxReturn : -16.0
+Eval_MinReturn : -89.0
+Eval_AverageEpLen : 38.5
+Buffer_Size : 8184
+Done logging...
+
+
+
+
+********** Iteration 44000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 44000
+running time 630.220366
+Train_EnvstepsSoFar : 44000
+TimeSinceStart : 630.220365524292
+Critic V Loss : 0.018845126032829285
+Critic Q Loss : 1.1372735500335693
+Critic Q Loss2 : 1.1787958145141602
+Actor Loss : 0.2099655419588089
+Actor LR : 3.511175705587463e-06
+Eval_AverageReturn : -31.200000762939453
+Eval_StdReturn : 10.73126220703125
+Eval_MaxReturn : -16.0
+Eval_MinReturn : -52.0
+Eval_AverageEpLen : 32.2
+Buffer_Size : 8184
+Done logging...
+
+
+
+
+********** Iteration 46000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 46000
+running time 658.582931
+Train_EnvstepsSoFar : 46000
+TimeSinceStart : 658.5829312801361
+Critic V Loss : 0.019909348338842392
+Critic Q Loss : 0.3636048436164856
+Critic Q Loss2 : 0.381365031003952
+Actor Loss : 0.31414273381233215
+Actor LR : 1.5708419435684585e-06
+Eval_AverageReturn : -32.25
+Eval_StdReturn : 11.579615592956543
+Eval_MaxReturn : -15.0
+Eval_MinReturn : -57.0
+Eval_AverageEpLen : 33.25
+Buffer_Size : 8184
+Done logging...
+
+
+
+
+********** Iteration 48000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 48000
+running time 686.669321
+Train_EnvstepsSoFar : 48000
+TimeSinceStart : 686.6693208217621
+Critic V Loss : 0.01956162229180336
+Critic Q Loss : 0.159795343875885
+Critic Q Loss2 : 0.16013234853744507
+Actor Loss : 0.721284806728363
+Actor LR : 3.9426493427611537e-07
+Eval_AverageReturn : -34.900001525878906
+Eval_StdReturn : 12.095040321350098
+Eval_MaxReturn : -14.0
+Eval_MinReturn : -59.0
+Eval_AverageEpLen : 35.9
+Buffer_Size : 8184
+Done logging...
+
+
+
+
+********** Iteration 50000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 50000
+running time 714.792271
+Train_EnvstepsSoFar : 50000
+TimeSinceStart : 714.7922713756561
+Critic V Loss : 0.017969341948628426
+Critic Q Loss : 0.32523611187934875
+Critic Q Loss2 : 0.32893818616867065
+Actor Loss : 1.1609129905700684
+Actor LR : 0.0
+Eval_AverageReturn : -30.700000762939453
+Eval_StdReturn : 7.836452960968018
+Eval_MaxReturn : -18.0
+Eval_MinReturn : -46.0
+Eval_AverageEpLen : 31.7
+Buffer_Size : 8184
+Done logging...
+
+

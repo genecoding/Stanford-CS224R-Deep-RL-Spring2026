@@ -1,0 +1,602 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Warning: All of online environments libraries in D4RL have been moved ]8;;https://github.com/Farama-Foundation/Gymnasium\Gymnasium]8;;\, ]8;;https://github.com/Farama-Foundation/MiniGrid\MiniGrid]8;;\ and ]8;;https://github.com/Farama-Foundation/Gymnasium-Robotics\Gymnasium-Robotics]8;;\, and all offline datasets in D4RL have been moved to ]8;;https://github.com/Farama-Foundation/Minari\Minari]8;;\.
+These new versions include large bug fixes, new versions of Python, and are where all new development will continue. Please upgrade these libraries as soon as you're able to do so.
+If you'd like to read more about the story behind this switch, please check out ]8;;https://farama.org/Announcing-Minari\this blog post]8;;\.
+Compiling /usr/local/lib/python3.10/site-packages/mujoco_py/cymj.pyx because it depends on /usr/local/lib/python3.10/site-packages/mujoco_py/pxd/mujoco.pxd.
+[1/1] Cythonizing /usr/local/lib/python3.10/site-packages/mujoco_py/cymj.pyx
+running build_ext
+building 'mujoco_py.cymj' extension
+creating /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder
+creating /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-310
+creating /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-310/usr
+creating /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-310/usr/local
+creating /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-310/usr/local/lib
+creating /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-310/usr/local/lib/python3.10
+creating /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-310/usr/local/lib/python3.10/site-packages
+creating /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-310/usr/local/lib/python3.10/site-packages/mujoco_py
+creating /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-310/usr/local/lib/python3.10/site-packages/mujoco_py/gl
+gcc -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -g0 -fPIC -I/usr/local/lib/python3.10/site-packages/mujoco_py -I/root/.mujoco/mujoco210/include -I/usr/local/lib/python3.10/site-packages/numpy/core/include -I/usr/local/include/python3.10 -c /usr/local/lib/python3.10/site-packages/mujoco_py/cymj.c -o /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-310/usr/local/lib/python3.10/site-packages/mujoco_py/cymj.o -fopenmp -w
+gcc -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -g0 -fPIC -I/usr/local/lib/python3.10/site-packages/mujoco_py -I/root/.mujoco/mujoco210/include -I/usr/local/lib/python3.10/site-packages/numpy/core/include -I/usr/local/include/python3.10 -c /usr/local/lib/python3.10/site-packages/mujoco_py/gl/osmesashim.c -o /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-310/usr/local/lib/python3.10/site-packages/mujoco_py/gl/osmesashim.o -fopenmp -w
+creating /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/lib.linux-x86_64-cpython-310
+creating /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/lib.linux-x86_64-cpython-310/mujoco_py
+gcc -shared -g0 /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-310/usr/local/lib/python3.10/site-packages/mujoco_py/cymj.o /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-310/usr/local/lib/python3.10/site-packages/mujoco_py/gl/osmesashim.o -L/root/.mujoco/mujoco210/bin -L/usr/local/lib -Wl,--enable-new-dtags,-R/root/.mujoco/mujoco210/bin -lmujoco210 -lglewosmesa -lOSMesa -lGL -o /usr/local/lib/python3.10/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_310_linuxcpuextensionbuilder/lib.linux-x86_64-cpython-310/mujoco_py/cymj.cpython-310-x86_64-linux-gnu.so -fopenmp
+pybullet build time: Jan 29 2025 23:16:28
+
+======================================== RUNTIME HYPERPARAMETERS ========================================
+algo: bc
+env_name: PointmassMedium-v0
+exp_name: filtered_bc_stitching_seed2
+seed: 2
+offline_dataset: offline_datasets/pointmass_stitching_dataset.npz
+filter_top_percent: 10.0
+rew_shift: 0.0
+rew_scale: 1.0
+awac_lambda: 0.1
+iql_expectile: 0.9
+n_layers: 4
+size: 512
+learning_rate: 0.0001
+n_actions: 10
+num_timesteps: 50000
+batch_size: 256
+no_gpu: False
+which_gpu: 0
+scalar_log_freq: 2000
+save_params: False
+use_wandb: True
+checkpoint_interval: -1
+buffer_interval: -1
+load_checkpoint: None
+double_q: True
+num_agent_train_steps_per_iter: 1
+num_critic_updates_per_agent_update: 1
+ep_len: 150
+n_eval_episodes: 20
+=========================================================================================================
+
+
+LOGGING TO:  /root/hw/cs224r/scripts/../../data/hw3_filtered_bc_stitching_seed2_PointmassMedium-v0_15-09-2026_09-34-14 
+
+
+Using GPU id 0
+
+Loading offline dataset from: offline_datasets/pointmass_stitching_dataset.npz
+
+  [Before filtering]
+    Trajectories : 79
+    Transitions  : 8184
+    Traj return  : mean=-102.987  max=-46.000  min=-150.000
+
+  [After filtering (top 10.0%)]
+    Trajectories : 8
+    Transitions  : 407
+    Traj return  : mean=-49.875  max=-46.000  min=-53.000
+Loaded 407 transitions into replay buffer.
+  [Dataset vis] Episode-length histogram saved to: vis/dataset/bc/lowpct-1_toppct10.0.png
+
+
+********** Iteration 2000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 2000
+running time 11.826620
+Train_EnvstepsSoFar : 2000
+TimeSinceStart : 11.826620101928711
+Actor Loss : 0.8485250473022461
+Eval_AverageReturn : -45.75
+Eval_StdReturn : 18.67049789428711
+Eval_MaxReturn : -17.0
+Eval_MinReturn : -95.0
+Eval_AverageEpLen : 46.75
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 4000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 4000
+running time 25.647354
+Train_EnvstepsSoFar : 4000
+TimeSinceStart : 25.647353887557983
+Actor Loss : 0.651761531829834
+Eval_AverageReturn : -39.0
+Eval_StdReturn : 12.4539155960083
+Eval_MaxReturn : -22.0
+Eval_MinReturn : -65.0
+Eval_AverageEpLen : 40.0
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 6000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 6000
+running time 39.670130
+Train_EnvstepsSoFar : 6000
+TimeSinceStart : 39.6701295375824
+Actor Loss : 0.4505004286766052
+Eval_AverageReturn : -48.04999923706055
+Eval_StdReturn : 13.998124122619629
+Eval_MaxReturn : -18.0
+Eval_MinReturn : -67.0
+Eval_AverageEpLen : 49.05
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 8000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 8000
+running time 53.662868
+Train_EnvstepsSoFar : 8000
+TimeSinceStart : 53.66286826133728
+Actor Loss : 0.32737940549850464
+Eval_AverageReturn : -63.79999923706055
+Eval_StdReturn : 22.66407012939453
+Eval_MaxReturn : -36.0
+Eval_MinReturn : -122.0
+Eval_AverageEpLen : 64.8
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 10000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 10000
+running time 68.697268
+Train_EnvstepsSoFar : 10000
+TimeSinceStart : 68.69726800918579
+Actor Loss : 0.2533086836338043
+Eval_AverageReturn : -54.79999923706055
+Eval_StdReturn : 23.859169006347656
+Eval_MaxReturn : -21.0
+Eval_MinReturn : -131.0
+Eval_AverageEpLen : 55.8
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 12000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 12000
+running time 82.768465
+Train_EnvstepsSoFar : 12000
+TimeSinceStart : 82.76846480369568
+Actor Loss : 0.22062742710113525
+Eval_AverageReturn : -60.75
+Eval_StdReturn : 24.895530700683594
+Eval_MaxReturn : -21.0
+Eval_MinReturn : -116.0
+Eval_AverageEpLen : 61.75
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 14000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 14000
+running time 97.199471
+Train_EnvstepsSoFar : 14000
+TimeSinceStart : 97.19947052001953
+Actor Loss : 0.20376503467559814
+Eval_AverageReturn : -53.70000076293945
+Eval_StdReturn : 19.5604190826416
+Eval_MaxReturn : -15.0
+Eval_MinReturn : -98.0
+Eval_AverageEpLen : 54.7
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 16000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 16000
+running time 111.383763
+Train_EnvstepsSoFar : 16000
+TimeSinceStart : 111.3837628364563
+Actor Loss : 0.16637447476387024
+Eval_AverageReturn : -47.95000076293945
+Eval_StdReturn : 17.954038619995117
+Eval_MaxReturn : -26.0
+Eval_MinReturn : -105.0
+Eval_AverageEpLen : 48.95
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 18000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 18000
+running time 124.991600
+Train_EnvstepsSoFar : 18000
+TimeSinceStart : 124.99159979820251
+Actor Loss : 0.16179537773132324
+Eval_AverageReturn : -61.45000076293945
+Eval_StdReturn : 19.81785774230957
+Eval_MaxReturn : -30.0
+Eval_MinReturn : -99.0
+Eval_AverageEpLen : 62.45
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 20000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 20000
+running time 139.222808
+Train_EnvstepsSoFar : 20000
+TimeSinceStart : 139.2228081226349
+Actor Loss : 0.15156908333301544
+Eval_AverageReturn : -62.25
+Eval_StdReturn : 28.379350662231445
+Eval_MaxReturn : -27.0
+Eval_MinReturn : -150.0
+Eval_AverageEpLen : 63.2
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 22000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 22000
+running time 153.171711
+Train_EnvstepsSoFar : 22000
+TimeSinceStart : 153.17171096801758
+Actor Loss : 0.13168209791183472
+Eval_AverageReturn : -60.599998474121094
+Eval_StdReturn : 14.5478515625
+Eval_MaxReturn : -35.0
+Eval_MinReturn : -86.0
+Eval_AverageEpLen : 61.6
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 24000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 24000
+running time 167.670124
+Train_EnvstepsSoFar : 24000
+TimeSinceStart : 167.67012357711792
+Actor Loss : 0.15772521495819092
+Eval_AverageReturn : -55.79999923706055
+Eval_StdReturn : 18.5164794921875
+Eval_MaxReturn : -35.0
+Eval_MinReturn : -105.0
+Eval_AverageEpLen : 56.8
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 26000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 26000
+running time 181.793791
+Train_EnvstepsSoFar : 26000
+TimeSinceStart : 181.79379105567932
+Actor Loss : 0.12042756378650665
+Eval_AverageReturn : -54.54999923706055
+Eval_StdReturn : 22.080476760864258
+Eval_MaxReturn : -27.0
+Eval_MinReturn : -119.0
+Eval_AverageEpLen : 55.55
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 28000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 28000
+running time 195.326854
+Train_EnvstepsSoFar : 28000
+TimeSinceStart : 195.32685351371765
+Actor Loss : 0.11454299092292786
+Eval_AverageReturn : -59.900001525878906
+Eval_StdReturn : 27.14940071105957
+Eval_MaxReturn : -31.0
+Eval_MinReturn : -108.0
+Eval_AverageEpLen : 60.9
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 30000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 30000
+running time 209.173135
+Train_EnvstepsSoFar : 30000
+TimeSinceStart : 209.17313528060913
+Actor Loss : 0.10812713205814362
+Eval_AverageReturn : -54.79999923706055
+Eval_StdReturn : 17.65106201171875
+Eval_MaxReturn : -30.0
+Eval_MinReturn : -92.0
+Eval_AverageEpLen : 55.8
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 32000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 32000
+running time 222.594484
+Train_EnvstepsSoFar : 32000
+TimeSinceStart : 222.59448409080505
+Actor Loss : 0.1120954155921936
+Eval_AverageReturn : -61.54999923706055
+Eval_StdReturn : 21.758848190307617
+Eval_MaxReturn : -28.0
+Eval_MinReturn : -128.0
+Eval_AverageEpLen : 62.55
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 34000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 34000
+running time 236.444725
+Train_EnvstepsSoFar : 34000
+TimeSinceStart : 236.44472527503967
+Actor Loss : 0.09850811958312988
+Eval_AverageReturn : -59.54999923706055
+Eval_StdReturn : 29.9691104888916
+Eval_MaxReturn : -29.0
+Eval_MinReturn : -150.0
+Eval_AverageEpLen : 60.5
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 36000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 36000
+running time 250.178807
+Train_EnvstepsSoFar : 36000
+TimeSinceStart : 250.1788067817688
+Actor Loss : 0.0943576991558075
+Eval_AverageReturn : -55.45000076293945
+Eval_StdReturn : 20.502378463745117
+Eval_MaxReturn : -21.0
+Eval_MinReturn : -115.0
+Eval_AverageEpLen : 56.45
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 38000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 38000
+running time 264.278037
+Train_EnvstepsSoFar : 38000
+TimeSinceStart : 264.27803659439087
+Actor Loss : 0.10972987115383148
+Eval_AverageReturn : -60.0
+Eval_StdReturn : 19.43707847595215
+Eval_MaxReturn : -27.0
+Eval_MinReturn : -118.0
+Eval_AverageEpLen : 61.0
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 40000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 40000
+running time 278.094347
+Train_EnvstepsSoFar : 40000
+TimeSinceStart : 278.0943465232849
+Actor Loss : 0.1154177337884903
+Eval_AverageReturn : -58.25
+Eval_StdReturn : 18.373554229736328
+Eval_MaxReturn : -18.0
+Eval_MinReturn : -104.0
+Eval_AverageEpLen : 59.25
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 42000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 42000
+running time 291.944905
+Train_EnvstepsSoFar : 42000
+TimeSinceStart : 291.9449050426483
+Actor Loss : 0.08833345025777817
+Eval_AverageReturn : -65.25
+Eval_StdReturn : 23.010595321655273
+Eval_MaxReturn : -32.0
+Eval_MinReturn : -117.0
+Eval_AverageEpLen : 66.25
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 44000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 44000
+running time 305.916751
+Train_EnvstepsSoFar : 44000
+TimeSinceStart : 305.91675066947937
+Actor Loss : 0.07803891599178314
+Eval_AverageReturn : -57.650001525878906
+Eval_StdReturn : 19.887874603271484
+Eval_MaxReturn : -32.0
+Eval_MinReturn : -112.0
+Eval_AverageEpLen : 58.65
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 46000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 46000
+running time 319.335819
+Train_EnvstepsSoFar : 46000
+TimeSinceStart : 319.3358190059662
+Actor Loss : 0.08675810694694519
+Eval_AverageReturn : -65.19999694824219
+Eval_StdReturn : 24.092737197875977
+Eval_MaxReturn : -32.0
+Eval_MinReturn : -118.0
+Eval_AverageEpLen : 66.2
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 48000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 48000
+running time 333.043650
+Train_EnvstepsSoFar : 48000
+TimeSinceStart : 333.04365038871765
+Actor Loss : 0.11395646631717682
+Eval_AverageReturn : -56.650001525878906
+Eval_StdReturn : 21.57840347290039
+Eval_MaxReturn : -27.0
+Eval_MinReturn : -105.0
+Eval_AverageEpLen : 57.65
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 50000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 50000
+running time 346.478271
+Train_EnvstepsSoFar : 50000
+TimeSinceStart : 346.47827076911926
+Actor Loss : 0.09936124086380005
+Eval_AverageReturn : -52.75
+Eval_StdReturn : 17.4208927154541
+Eval_MaxReturn : -18.0
+Eval_MinReturn : -103.0
+Eval_AverageEpLen : 53.75
+Buffer_Size : 407
+Done logging...
+
+

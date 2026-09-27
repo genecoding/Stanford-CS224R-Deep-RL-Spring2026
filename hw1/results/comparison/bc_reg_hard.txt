@@ -1,0 +1,27 @@
+Method: bc_reg
+Env:    hard
+Eval:   333.1 +/- 64.9  (50 episodes)
+Chunks: predict 20, execute 10
+
+=== Episode 1: 386 steps, CRASHED ===
+  pipe  1 (t= 276): bird=0.790  gaps=(0.438, 0.772)  act=0.744
+  pipe  2 (t= 343): bird=0.489  gaps=(0.487, 0.487)  act=0.486
+  CRASH  (t= 386): bird=0.513  gaps=(0.319, 0.654)
+
+=== Episode 2: 386 steps, CRASHED ===
+  pipe  1 (t= 276): bird=0.807  gaps=(0.511, 0.846)  act=0.753
+  pipe  2 (t= 343): bird=0.613  gaps=(0.609, 0.609)  act=0.614
+  CRASH  (t= 386): bird=0.680  gaps=(0.442, 0.777)
+
+=== Episode 3: 386 steps, CRASHED ===
+  pipe  1 (t= 276): bird=0.218  gaps=(0.196, 0.531)  act=0.262
+  pipe  2 (t= 343): bird=0.507  gaps=(0.507, 0.507)  act=0.506
+  CRASH  (t= 386): bird=0.531  gaps=(0.339, 0.674)
+
+=== Episode 4: 386 steps, CRASHED ===
+  pipe  1 (t= 276): bird=0.165  gaps=(0.212, 0.547)  act=0.201
+  pipe  2 (t= 343): bird=0.504  gaps=(0.504, 0.504)  act=0.504
+  CRASH  (t= 386): bird=0.526  gaps=(0.337, 0.672)
+
+=== Episode 5: 252 steps, CRASHED ===
+  CRASH  (t= 252): bird=0.685  gaps=(0.179, 0.513)
