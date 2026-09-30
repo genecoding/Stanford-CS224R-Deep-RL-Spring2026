@@ -10,26 +10,26 @@
 
 ## Result
 * DAgger learning curve  
-  <img src="results/comparison/dagger_iterations_hard.png" width="40%" />
-* Comparison
-  <img src="results/comparison/summary.png" width="40%" />
+  <img src="results/comparison/dagger_iterations_hard.png" width="50%" />
+* Comparison  
+  <img src="results/comparison/summary.png" width="50%" />
 * Evaluation rollouts
   * Behavior Cloning - Easy
     | Agent | Expert |
     |:-----:|:------:|
-    |||
+    | <video src="" controls></video> | <video src="" controls></video> |
   * Behavior Cloning - Hard
     | Agent | Expert |
     |:-----:|:------:|
-    |||
+    | <video src="" controls></video> | <video src="" controls></video> |
   * Flow Matching - Hard
     | Agent | Expert |
     |:-----:|:------:|
-    |||
+    | <video src="" controls></video> | <video src="" controls></video> |
   * DAgger - Hard
     | Agent | Expert |
     |:-----:|:------:|
-    |||
+    | <video src="" controls></video> | <video src="" controls></video> |
 
 ## Reference
 
