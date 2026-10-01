@@ -12,8 +12,13 @@
 ## Result
 * Learning curves  
   <img src="results/results_colab.png" width="49%" /> <img src="results/results_modal.png" width="49%" />
-  <img src="results/results_colab.png" width="49%" /> <img src="results/colab_results.png" width="49%" />
 * Evaluation rollouts
+  * P2  
+    <img src="results/p2_frame740000_ep0_SR=0.48.gif" width="18%" /> <img src="results/p2_frame740000_ep1_SR=0.48.gif" width="18%" /> <img src="results/p2_frame740000_ep2_SR=0.48.gif" width="18%" /> <img src="results/p2_frame740000_ep3_SR=0.48.gif" width="18%" /> <img src="results/p2_frame740000_ep4_SR=0.48.gif" width="18%" />
+  * P3-1  
+    <img src="results/p3-1_frame66000_ep0_SR=1.00.gif" width="18%" /> <img src="results/p3-1_frame66000_ep1_SR=1.00.gif" width="18%" /> <img src="results/p3-1_frame66000_ep2_SR=1.00.gif" width="18%" /> <img src="results/p3-1_frame66000_ep3_SR=1.00.gif" width="18%" /> <img src="results/p3-1_frame66000_ep4_SR=1.00.gif" width="18%" />
+  * P3-2  
+    <img src="results/p3-2_frame36000_ep0_SR=1.00.gif" width="18%" /> <img src="results/p3-2_frame36000_ep1_SR=1.00.gif" width="18%" /> <img src="results/p3-2_frame36000_ep2_SR=1.00.gif" width="18%" /> <img src="results/p3-2_frame36000_ep3_SR=1.00.gif" width="18%" /> <img src="results/p3-2_frame36000_ep4_SR=1.00.gif" width="18%" />
 
 
 
