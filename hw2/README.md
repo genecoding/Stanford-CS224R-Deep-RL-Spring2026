@@ -7,10 +7,11 @@
   * [x] Tabular Q-Learning
   * [x] Generalized Advantage Estimation (GAE)
   * [x] Proximal Policy Optimization (PPO)
-  * [x] Actor-Critic
+  * [x] Actor-Critic Methods
 
 ## Result
 * Learning curves  
+  (x-axis: frames)  
   <img src="results/results_colab.png" width="49%" /> <img src="results/results_modal.png" width="49%" />
 * Evaluation rollouts
   * P2  
@@ -21,7 +22,7 @@
     <img src="results/p3-2_frame36000_ep0_SR=1.00.gif" width="18%" /> <img src="results/p3-2_frame36000_ep1_SR=1.00.gif" width="18%" /> <img src="results/p3-2_frame36000_ep2_SR=1.00.gif" width="18%" /> <img src="results/p3-2_frame36000_ep3_SR=1.00.gif" width="18%" /> <img src="results/p3-2_frame36000_ep4_SR=1.00.gif" width="18%" />
 
 ## Reference
-
+* [Proximal Policy Optimization Algorithms], J Schulman *et al.*
 
 
 [instructions]: README_.md
@@ -29,3 +30,4 @@
 [run_hw2_p1.ipynb]: run_hw2_p1.ipynb
 [run_hw2_p2p3.ipynb]: run_hw2_p2p3.ipynb
 [run_hw2_modal.ipynb]: run_hw2_modal.ipynb
+[Proximal Policy Optimization Algorithms]: https://arxiv.org/abs/1707.06347
