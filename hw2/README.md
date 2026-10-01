@@ -4,11 +4,16 @@
 
 ## Note
 * Implemented algorithms:
-  * [x] Behavior Cloning
-  * [x] Flow Matching
-  * [x] DAgger (Dataset Aggregation)
+  * [x] Tabular Q-Learning
+  * [x] Generalized Advantage Estimation (GAE)
+  * [x] Proximal Policy Optimization (PPO)
+  * [x] Actor-Critic
 
 ## Result
+* Learning curves  
+  <img src="results/results_colab.png" width="49%" /> <img src="results/results_modal.png" width="49%" />
+  <img src="results/results_colab.png" width="49%" /> <img src="results/colab_results.png" width="49%" />
+* Evaluation rollouts
 
 
 
