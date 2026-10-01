@@ -32,6 +32,8 @@
     | <video src="https://github.com/user-attachments/assets/24226610-a17b-4105-b957-54cbda00a1cb" controls></video> | <video src="https://github.com/user-attachments/assets/040b98cd-d8a3-4b47-97d7-20c14f5a9189" controls></video> |
 
 ## Reference
+* [Diffusion Policy: Visuomotor Policy Learning via Action Diffusion], C Chi *et al.*
+* [Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware], T Zhao *et al.*
 
 
 
@@ -40,5 +42,5 @@
 [installation]: installation.md
 [Homework1]: https://cs224r.stanford.edu/material/hw1/CS224R_2026_Homework_1.pdf
 [run_hw1.ipynb]: run_hw1.ipynb
-
-
+[Diffusion Policy: Visuomotor Policy Learning via Action Diffusion]: https://arxiv.org/abs/2303.04137v5
+[Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware]: https://arxiv.org/abs/2304.13705
