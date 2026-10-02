@@ -23,7 +23,6 @@
 
 ### AntMaze - Medium-Diverse
 * Learning curves  
-  (x-axis: timesteps)  
   <img src="results/colab_antmaze_medium.png" width="49%" /> <img src="results/modal_antmaze_medium.png" width="49%" />
 * Evaluation rollouts
   * AWAC  
@@ -34,7 +33,6 @@
 
 ### PointMass - Medium
 * Learning curves  
-  (x-axis: timesteps)  
   <img src="results/colab_pointmass_medium.png" width="49%" /> <img src="results/modal_pointmass_medium.png" width="49%" />
 * Evaluation rollouts
   * Filtered BC  
