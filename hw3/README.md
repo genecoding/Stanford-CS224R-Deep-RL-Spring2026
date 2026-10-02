@@ -6,6 +6,7 @@
 * Implemented algorithms:
   * [x] Advantage Weighted Actor Critic (AWAC)
   * [x] Implicit Q-Learning (IQL)
+* Adjusted camera angles during evaluation rendering for a clearer view.
 
 ## Result
 ### AntMaze - UMaze
@@ -27,6 +28,7 @@
 * Evaluation rollouts
   * AWAC  
     <img src="modal_results/hw3_awac_antmaze_medium_diverse_seed1/eval_traj_last.gif" width="32.5%" /> <img src="modal_results/hw3_awac_antmaze_medium_diverse_seed2/eval_traj_last.gif" width="32.5%" /> <img src="modal_results/hw3_awac_antmaze_medium_diverse_seed3/eval_traj_last.gif" width="32.5%" />
+    Note that the ant in the third evaluation video actually fails—it doesn't reach the goal at the top-right corner.
   * IQL, `zeta = 0.9`  
     <img src="modal_results/hw3_iql_zeta_0.9_medium_diverse_seed1/eval_traj_last.gif" width="32.5%" /> <img src="modal_results/hw3_iql_zeta_0.9_medium_diverse_seed2/eval_traj_last.gif" width="32.5%" /> <img src="modal_results/hw3_iql_zeta_0.9_medium_diverse_seed3/eval_traj_last.gif" width="32.5%" />
 
