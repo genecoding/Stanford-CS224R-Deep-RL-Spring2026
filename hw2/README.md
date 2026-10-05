@@ -7,7 +7,7 @@
   * [x] Tabular Q-Learning
   * [x] Generalized Advantage Estimation (GAE)
   * [x] Proximal Policy Optimization (PPO)
-  * [x] Actor-Critic Methods
+  * [x] Actor-Critic
 
 ## Result
 * Learning curves  
